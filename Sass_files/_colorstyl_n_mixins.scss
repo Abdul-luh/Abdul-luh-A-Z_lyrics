@@ -1,0 +1,23 @@
+$navBgColor: #9999CC;
+$pryBtnColor: #7777CC;
+$secBtnColor: #776dc7;
+$topcontentBgColor: #666699;
+$contentBgColor: #DDDDEE;
+$textColor: #ffffff;
+$secolor: #fff;
+$linkText: 18px;
+$pryAnchorcolor: blue;
+$pryfontfamily:Arial, Helvetica, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+
+@mixin fontStyle{
+    font-family: $pryfontfamily;
+    color: $textColor;
+    font-weight: 700;
+    font-size: $linkText;
+}
+@mixin listStyle {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    color: $textColor;
+}

@@ -1,0 +1,192 @@
+@use "./reset";
+@use "./components/nav";
+@use "./components/hero";
+
+
+@use "colorstyl_n_mixins" as*;
+
+
+// this is the the hero section
+.content_wraper{
+    background-color: $contentBgColor;
+    .topcontent{
+        background-color: $topcontentBgColor;
+        // padding: 30px;
+        height: 300px;
+        div{
+            // padding: 100%;
+            // width: 500px;
+            border: 2px;
+        }
+    }
+}
+// this is the end of the hero section
+
+// this is the beginning of the actual content
+.main_cont{
+    display: flex;
+    justify-content: center;
+    .left_cont{
+        // border: 2px solid black;
+        width: 300px;
+        text-align: center;
+        font-family: $pryfontfamily;
+        margin-right: 30px;
+        h1{
+            font-family: inherit;
+            font-size: 30px;
+            font-weight: 100;
+        }
+        p{
+            margin-top: 24px;
+            font-weight: 50;
+            font-size: 16px;
+            font-family: inherit;
+            // font-style: normal;
+        }
+        small{
+            color: darkgray;
+        }
+    }
+
+.contntform{
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+    // justify-content: center;
+    // align-items: center;
+    .searchBar{
+        width: 800px;
+        height: 30px;
+        border-radius: 5px 0px 0px 5px;
+        border: $secolor;
+    }
+    button{
+        background-color: $navBgColor;
+        border: 0px;
+        border-radius:  0px 5px 5px 0px;
+        height: 30px;
+        width: 70px;
+    }
+    button:hover{
+        background-color: $pryBtnColor
+    }
+}
+
+    .right_contnt{
+        // padding: 100px;
+        width: 300px;
+        height: 200px;
+        margin: 30px;
+        background-color: whitesmoke;
+    }
+}
+//note this is my main Sass stylin Habeebah sho get
+// this is the end of the main content
+
+// This is the beginning of the hotsong list
+h2{
+    text-align: center;
+    font-family: $pryfontfamily;
+    font-weight: lighter;
+}
+.tableContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    table{
+        background-color: $secolor;
+        padding-right: 20px;
+        tr, td{
+            border-bottom: 2px solid rgba(0, 0, 0, 0.479);
+            padding: 10px;
+            a{
+                text-decoration: none;
+                color: $pryAnchorcolor;
+                font-family: $pryfontfamily;
+                font-size: 20px;
+            }
+        }
+    }
+}
+.leftTable{
+    margin-right: 20px;
+}
+.rightTable{
+    margin-left: 20px;
+}
+// this is the end of the table section
+.midAds{
+    justify-content: center;
+    margin: 50px 0px;
+    .adsContent{
+        height: 100px;
+        width: 700px;
+        background-color: $secolor;
+        margin: auto;
+    }
+}
+// This is the beginning of the Album
+.albumWrap{
+    .topAlbum, .bottomAlbum{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-family: $pryfontfamily;
+        .card{
+            width: 160px;
+            height: 180px;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: $pryAnchorcolor;
+            }
+        }
+        img{
+            width: 150px;
+            height: 160px;
+        }
+    }
+}
+// this is the end of the album card 
+
+// All this is classified as the footer
+footer{
+    background-color: $contentBgColor;
+}
+.footerNavTop{
+    background-color: $navBgColor;
+    height: 40px;
+    color: $textColor;
+    text-align: center;
+    align-items: center;
+    font-family: $pryfontfamily;
+    margin-top: 50px;
+    padding-top: 20px;
+    border: 0.5px solid #8383c1;
+    // justify-content: center;
+    a{
+        font-family: inherit;
+        text-decoration: none;
+        color: inherit;
+        margin-top: 60px;
+        margin-bottom: 0px; 
+    }
+}
+.footer{
+    text-align: center;
+    justify-content: center;
+    .topfooter, .bottomfooter{
+        padding-top: 20px;
+        a{
+            color: $pryAnchorcolor;
+            text-decoration: none;
+        }
+        small{
+            color: rgba(26, 26, 27, 0.9);
+            font-weight: 900;
+        }
+        // margin-bottom: 70px;
+    }
+}

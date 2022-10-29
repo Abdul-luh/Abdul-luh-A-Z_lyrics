@@ -1,0 +1,7 @@
+@use "colorstyl_n_mixins" as*;
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: $contentBgColor;
+}

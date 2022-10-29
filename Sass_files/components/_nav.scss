@@ -1,0 +1,86 @@
+@use "../colorstyl_n_mixins" as*;
+
+// this is the beginning of nav section
+
+
+
+a{
+    margin: 0px 0px 0px 15px;
+    .AzLogo{
+        width: 40px;
+        height: 40px;
+        margin: 3px 0px 0px 100px;
+    }
+}
+
+.nav {
+    @include fontStyle;
+    @include listStyle;
+    background-color: $navBgColor;
+    height: 50px;
+    width: 100%;
+    margin: 0px;
+    flex-wrap: wrap;
+    div{
+        display: flex;
+        margin: 3px 5px 0px 0px;
+        padding: 5px 0px;
+        height: 40px;
+        align-items: center;
+        ul{
+            @include listStyle;
+            display: flex;
+            margin: 5px 5px 5px 0;
+            li{
+                // width: 20px;
+                // margin: 3px;
+                // padding: 0px;
+                a{
+                    @include listStyle;
+                    padding: 2px;
+                    margin: 0.125em ;
+                    font-style: inherit;
+                    
+                    // text-decoration: none;
+                }
+                .hovaleta:hover{
+                    // color: $pryBtnColor;
+                    text-decoration: underline;
+                    background-color: $pryBtnColor;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    li{
+        display: none;
+    }
+}
+
+form{
+    margin: 5px 5px 5px 120px;
+    display: flex;
+    .search-bar{
+        border: 1px solid rgba(255, 255, 255, 0);
+        border-radius: 5px 0px 0px 5px;
+        height: 34px;
+        width: 180px;
+        padding: 2px 0px 2px 2px;
+    }
+    .search-btn{
+        color: $textColor;
+        background-color: $pryBtnColor;
+        padding: 3px 12px;
+        height: 34px;
+        margin: 0px 1px 1px 0px;
+        border: 1px;
+        border-radius: 0px 5px 5px 0px;
+        font-family: $pryfontfamily;
+        font-size: 15px;
+    }
+    .search-btn:hover{
+        background-color: $secBtnColor;
+    }
+}
+// this is the end of the nav section
